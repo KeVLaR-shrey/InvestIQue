@@ -1,18 +1,20 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import { Row, Col, Card, Divider, Image, Button } from "antd";
-import Styles from "./Home.module.scss";
+import { Button, Card, Col, Divider, Image, Row } from "antd";
+import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import Styles from "./Home.module.scss";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className={Styles.homePage}>
-        <Col className={Styles.hero}>
-        <Navbar/>
+      <Col className={Styles.hero}>
+        <Navbar />
         <Col className={Styles.heroCol}>
-          <p>Your assets in confidence,
+          <p>
+            Your assets in confidence,
             <br></br>
-Invest with evidence.</p>
+            Invest with evidence.
+          </p>
           {/* <h1>
             Analysa is your one stop platform to analyse all things car
             industry. Analysa harnesses the power of a dataset of 1200 cars with
@@ -20,8 +22,12 @@ Invest with evidence.</p>
             automotive industry!
           </h1> */}
           <Col className={Styles.heroBtnGroup}>
-          <Button className={Styles.heroBtn} type="primary">Login</Button>
-          <Button className={Styles.heroBtn} type="default">Register</Button>
+            <Button className={Styles.heroBtn} type="primary">
+              Login
+            </Button>
+            <Button className={Styles.heroBtn} type="default">
+              Register
+            </Button>
           </Col>
         </Col>
       </Col>
@@ -32,9 +38,7 @@ Invest with evidence.</p>
       <Row className={Styles.cardController}>
         <Card className={Styles.card} bordered={false} hoverable>
           <h3>Data Mining</h3>
-          <p>
-          Analyzing data patterns.
-          </p>
+          <p>Analyzing data patterns.</p>
           <div>
             <Image
               src={"/1.png"}
@@ -47,9 +51,7 @@ Invest with evidence.</p>
         </Card>
         <Card className={Styles.card} bordered={false} hoverable>
           <h3>Machine Learning</h3>
-          <p>
-          Improving investment accuracy.
-          </p>
+          <p>Improving investment accuracy.</p>
           <div>
             <Image
               src={"/2.png"}
@@ -62,9 +64,7 @@ Invest with evidence.</p>
         </Card>
         <Card className={Styles.card} bordered={false} hoverable>
           <h3>Real-time Data</h3>
-          <p>
-          Using up-to-date information.
-          </p>
+          <p>Using up-to-date information.</p>
           <div>
             <Image
               src={"/3.png"}
@@ -80,7 +80,6 @@ Invest with evidence.</p>
         <h2>Development Journey</h2>
         <Divider className={Styles.divider} />
       </Col>
-    
     </div>
-  )
+  );
 }
