@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  .leftSection {
+    width: 60%;
+    background-image: url("../../public/trade.jpg");
+  }
+
+  .rightSection {
+    width: 40%;
+    background-image: url("../../public/loginbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 2rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      width: 200px;
+      margin-top: 0rem;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+      }
+
+      button {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: #0023ab;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .register {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+        margin-right: 1rem;
+      }
+
+      .registerButton {
+        padding: 0.5rem 1rem;
+        background-color: #0023ab;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
